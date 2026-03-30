@@ -359,6 +359,56 @@
     position: relative; z-index: 1;
   }
 
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 1020px) {
+    .slide { width: 100%; }
+  }
+
+  @media (max-width: 768px) {
+    body { padding: 20px 12px; }
+
+    .slide { min-height: auto; padding: 40px 28px !important; }
+
+    /* Slide 1 */
+    .s1-title { font-size: 36px; }
+    .s1-logo img { height: 50px; }
+    .s1-tag { display: none; }
+    .s1-sub { font-size: 15px; }
+
+    /* Slide 2 */
+    .slide-title { font-size: 28px; margin-bottom: 24px; }
+    .pain-grid { grid-template-columns: 1fr; gap: 14px; }
+    .pain-num { font-size: 36px; }
+
+    /* Slide 3 */
+    .vision-layout { grid-template-columns: 1fr; gap: 28px; }
+    .vision-left .slide-title { font-size: 28px; }
+
+    /* Slide 4 */
+    .flow-container { flex-direction: column; gap: 12px; }
+    .flow-arrow { transform: rotate(90deg); align-self: center; padding: 4px 0; }
+
+    /* Slide 5 */
+    .model-grid { grid-template-columns: 1fr; }
+    .model-card.main { grid-row: span 1; }
+    .model-headline { font-size: 22px; }
+
+    /* Slide 6 */
+    .cta-layout { grid-template-columns: 1fr; gap: 32px; }
+    .cta-left .slide-title { font-size: 28px; }
+    .logo-footer img { height: 28px; }
+  }
+
+  @media (max-width: 480px) {
+    .slide { padding: 32px 20px !important; }
+    .s1-title { font-size: 28px; }
+    .slide-title { font-size: 24px; }
+    .pain-num { font-size: 30px; }
+    .v-step { padding: 14px 16px; }
+    .cta-item { padding: 16px; }
+    .cta-btn { font-size: 13px; padding: 12px 24px; }
+  }
+
   /* ─── SLIDE 6: CTA ─── */
   .s6 {
     background: linear-gradient(135deg, #0d1b4b 0%, #1a2a5e 40%, #2a1a5e 100%);
